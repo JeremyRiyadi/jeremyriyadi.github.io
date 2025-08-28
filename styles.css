@@ -903,7 +903,15 @@ body {
     }
 
     .portfolio-image {
-        height: 280px;
+        height: 250px;
+    }
+
+    .project-info {
+        padding: 10px 10px;
+    }
+
+    .project-info p {
+        font-size: 0.8rem;
     }
 
     .skill-icon {
