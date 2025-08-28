@@ -902,6 +902,10 @@ body {
         justify-content: center;
     }
 
+    .portfolio-image {
+        height: 280px;
+    }
+
     .skill-icon {
         width: 40px;
         height: 40px;
