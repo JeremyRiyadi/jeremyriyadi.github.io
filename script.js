@@ -216,9 +216,9 @@ form.addEventListener("submit", async function(e) {
         headers: { 'Accept': 'application/json' }
     });
     if (response.ok) {
-        alert("Pesan berhasil dikirim!");
+        alert("Message sent successfully!");
         form.reset();
     } else {
-        alert("Terjadi kesalahan, coba lagi.");
+        alert("An error occurred, please try again");
     }
 });
