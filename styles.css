@@ -291,7 +291,7 @@ body {
 /* About Section */
 .about {
     padding: 100px 0;
-    background: white;
+    background: #f3f1ff;
 }
 
 .about-content {
@@ -437,7 +437,7 @@ body {
 /* Portfolio Section */
 .portfolio {
     padding: 100px 0;
-    background: white;
+    background: #f3f1ff;
 }
 
 .portfolio-grid {
