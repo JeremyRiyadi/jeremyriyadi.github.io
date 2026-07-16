@@ -291,7 +291,7 @@ body {
 /* About Section */
 .about {
     padding: 100px 0;
-    background: #f3f1ff;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .about-content {
@@ -434,10 +434,103 @@ body {
     transition: width 2s ease;
 }
 
+/* Work Experience Section */
+.experience {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.experience-item {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.experience-logo {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    background: #f3f1ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.experience-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
+}
+
+.experience-details {
+    flex: 1;
+}
+
+.experience-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.experience-role {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.experience-date {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 4px 14px;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+.experience-company {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+}
+
+.experience-description {
+    color: #666;
+    line-height: 1.7;
+}
+
 /* Portfolio Section */
 .portfolio {
     padding: 100px 0;
-    background: #f3f1ff;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .portfolio-grid {
@@ -492,7 +585,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(160deg, #282442 0%, #3a3266 60%, #453a72 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -540,6 +633,7 @@ body {
 .project-link:hover {
     background: white;
     color: #333;
+    font-weight: bold;
 }
 
 /* Contact Section */
@@ -774,6 +868,17 @@ body {
     .portfolio-grid {
         grid-template-columns: 1fr;
     }
+
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        text-align: center;
+    }
     
     .footer-content {
         flex-direction: column;
@@ -922,6 +1027,23 @@ body {
     .contact-icon {
         width: 40px;
         height: 40px;
+    }
+
+    .experience-item {
+        padding: 1.5rem;
+    }
+
+    .experience-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .experience-role {
+        font-size: 1rem;
+    }
+
+    .experience-description {
+        font-size: 0.85rem;
     }
 
     .icon-html, .icon-backend, .icon-design, .icon-mobile,
