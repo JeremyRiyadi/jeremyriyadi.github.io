@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Pribadi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span class="logo-text">Portfolio</span>
+                <span class="logo-text"><span class="bracket">&lt;</span>Jeremy<span class="bracket">/&gt;</span></span>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -20,6 +20,12 @@
                 </li>
                 <li class="nav-item">
                     <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
                 </li>
                 <li class="nav-item">
                     <a href="#skills" class="nav-link">Skills</a>
@@ -40,28 +46,41 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero grid-texture">
         <div class="hero-container">
             <div class="hero-content">
+                <p class="eyebrow">// hello_world</p>
                 <h1 class="hero-title">
-                    <span class="greeting">Hello, my name is</span>
+                    <span class="greeting">Hi, I'm</span>
                     <span class="name">Jeremy D. Riyadi</span>
-                    <span class="profession">Undergraduate Data Science Student at BINUS University</span>
                 </h1>
+                <span class="profession">Undergraduate Data Science Student at BINUS University</span>
                 <p class="hero-description">
-                    I'm currently a Data Science student with a strong interest in data analysis, and I have a high enthusiasm for learning and trying new things, especially in the fields of data technologies. I am also currently doing an internship at PT. KPSG as a Data Scientist, where I apply my knowledge to real-world projects and continue developing my skills
+                    I'm currently a Data Science student with a strong interest in data analysis, and I have a high enthusiasm for learning and trying new things, especially in the fields of data technologies. I am also currently doing an internship at PT. KPSG as a Data Scientist, where I apply my knowledge to real-world projects and continue developing my skills.
                 </p>
                 <div class="hero-buttons">
                     <a href="/image/Jeremy Djohar Riyadi CV.pdf" target="_blank" class="btn btn-primary">My CV</a>
                     <a href="/achievements/achievements.html" class="btn btn-secondary">Certifications</a>
                 </div>
+                <p class="hero-meta"><span class="dot-live"></span> Based in Jakarta, Indonesia</p>
             </div>
-            <div class="hero-image">
-                <div class="image-container">
-                    <div class="floating-elements">
-                        <div class="floating-element element-1"></div>
-                        <div class="floating-element element-2"></div>
-                        <div class="floating-element element-3"></div>
+            <div class="hero-visual">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="terminal-card">
+                    <div class="terminal-header">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                        <span class="terminal-title">status.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="terminal-line"><span class="prompt">$</span>whoami</p>
+                        <p class="terminal-line output">jeremy_djohar_riyadi</p>
+                        <p class="terminal-line"><span class="prompt">$</span>role --current</p>
+                        <p class="terminal-line output">Data Scientist Intern @ PT. KPSG</p>
+                        <p class="terminal-line"><span class="prompt">$</span>status</p>
+                        <p class="terminal-line output">Learning, building, shipping<span class="cursor">▍</span></p>
                     </div>
                 </div>
             </div>
@@ -75,6 +94,7 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
+                <p class="eyebrow center">// about-me</p>
                 <h2 class="section-title">About Me</h2>
                 <p class="section-subtitle">Get to know more about my journey and passion</p>
             </div>
@@ -91,19 +111,45 @@
                             <span class="stat-number">20+</span>
                             <span class="stat-label">Projects Accomplished</span>
                         </div>
-                        <!-- <div class="stat-item">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Tahun Pengalaman</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">30+</span>
-                            <span class="stat-label">Klien Puas</span>
-                        </div> -->
                     </div>
                 </div>
                 <div class="about-image">
                     <div class="image-wrapper">
-                        <img src="./image/foto-diri.jpg">
+                        <img src="./image/foto-diri.jpg" alt="Jeremy Djohar Riyadi">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow center">// education</p>
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">The academic foundation behind the work</p>
+            </div>
+            <!-- Sesuaikan rentang tahun & mata kuliah unggulan di bawah jika perlu -->
+            <div class="education-card">
+                <div class="education-logo">
+                    <img src="./image/work-experience/BINUS.png" alt="BINUS University Logo">
+                </div>
+                <div class="education-details">
+                    <div class="education-header">
+                        <h3>Bachelor of Computer Science — Data Science</h3>
+                        <span class="education-date">2022 - 2026 (Expected)</span>
+                    </div>
+                    <h4>BINUS University</h4>
+                    <p>
+                        Focused on machine learning, statistical modeling, and data-driven problem solving, complemented by hands-on project work, teaching experience, and active involvement in campus initiatives.
+                    </p>
+                    <div class="education-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">Statistical Modeling</span>
+                        <span class="tag">Data Mining</span>
+                        <span class="tag">Database Systems</span>
+                        <span class="tag">Data Visualization</span>
                     </div>
                 </div>
             </div>
@@ -114,6 +160,7 @@
     <section id="experience" class="experience">
         <div class="container">
             <div class="section-header">
+                <p class="eyebrow center">// experience</p>
                 <h2 class="section-title">Work Experience</h2>
                 <p class="section-subtitle">My professional journey so far</p>
             </div>
@@ -145,7 +192,8 @@
                         </div>
                         <h4 class="experience-company">Sunrise Enrichment Center</h4>
                         <p class="experience-description">
-                            Responsible for teaching coding fundamentals to students, introducing basic programming concepts and problem-solving skills through interactive and practical learning activities. Prepare lesson materials, coding exercises, and simple projects to help students understand programming logic, guide students while they practice writing code, monitor their progress, and create a supportive and engaging learning environment that encourages curiosity, creativity, and confidence in technology.        </p>
+                            Responsible for teaching coding fundamentals to students, introducing basic programming concepts and problem-solving skills through interactive and practical learning activities. Prepare lesson materials, coding exercises, and simple projects to help students understand programming logic, guide students while they practice writing code, monitor their progress, and create a supportive and engaging learning environment that encourages curiosity, creativity, and confidence in technology.
+                        </p>
                     </div>
                 </div>
 
@@ -204,14 +252,13 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
+                <p class="eyebrow center">// skills</p>
                 <h2 class="section-title">Skills</h2>
                 <p class="section-subtitle">Technologies and Tools I Use</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon">
-                        <div class="icon-html"></div>
-                    </div>
+                    <div class="skill-icon icon-frontend"></div>
                     <h3>Frontend Development</h3>
                     <p>HTML5, CSS3, JavaScript</p>
                     <div class="skill-progress">
@@ -219,9 +266,7 @@
                     </div>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">
-                        <div class="icon-backend"></div>
-                    </div>
+                    <div class="skill-icon icon-datasci"></div>
                     <h3>Data Science</h3>
                     <p>Python, R</p>
                     <div class="skill-progress">
@@ -229,9 +274,7 @@
                     </div>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">
-                        <div class="icon-design"></div>
-                    </div>
+                    <div class="skill-icon icon-design"></div>
                     <h3>UI/UX Design</h3>
                     <p>Figma</p>
                     <div class="skill-progress">
@@ -239,9 +282,7 @@
                     </div>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">
-                        <div class="icon-mobile"></div>
-                    </div>
+                    <div class="skill-icon icon-qa"></div>
                     <h3>Quality Assurance</h3>
                     <p>Manual Testing</p>
                     <div class="skill-progress">
@@ -249,9 +290,7 @@
                     </div>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">
-                        <div class="icon-mobile"></div>
-                    </div>
+                    <div class="skill-icon icon-ai"></div>
                     <h3>Artificial Intelligence</h3>
                     <p>Machine Learning, Deep Learning, Text Mining</p>
                     <div class="skill-progress">
@@ -262,9 +301,46 @@
         </div>
     </section>
 
+    <!-- Tech Stack Marquee -->
+    <section class="tech-stack">
+        <div class="container">
+            <p class="eyebrow center">// tools_of_the_trade</p>
+        </div>
+        <div class="marquee">
+            <div class="marquee-track">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">R</span>
+                <span class="tech-pill">SQL</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">NumPy</span>
+                <span class="tech-pill">Scikit-learn</span>
+                <span class="tech-pill">TensorFlow</span>
+                <span class="tech-pill">Power BI</span>
+                <span class="tech-pill">Tableau</span>
+                <span class="tech-pill">Jupyter Notebook</span>
+                <span class="tech-pill">Git & GitHub</span>
+                <span class="tech-pill">Excel</span>
+                <span class="tech-pill" aria-hidden="true">Python</span>
+                <span class="tech-pill" aria-hidden="true">R</span>
+                <span class="tech-pill" aria-hidden="true">SQL</span>
+                <span class="tech-pill" aria-hidden="true">Pandas</span>
+                <span class="tech-pill" aria-hidden="true">NumPy</span>
+                <span class="tech-pill" aria-hidden="true">Scikit-learn</span>
+                <span class="tech-pill" aria-hidden="true">TensorFlow</span>
+                <span class="tech-pill" aria-hidden="true">Power BI</span>
+                <span class="tech-pill" aria-hidden="true">Tableau</span>
+                <span class="tech-pill" aria-hidden="true">Jupyter Notebook</span>
+                <span class="tech-pill" aria-hidden="true">Git & GitHub</span>
+                <span class="tech-pill" aria-hidden="true">Excel</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-header">
+                <p class="eyebrow center">// projects</p>
                 <h2 class="section-title">Projects</h2>
                 <p class="section-subtitle">Several projects I have worked on</p>
             </div>
@@ -356,40 +432,28 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
+                <p class="eyebrow center">// contact</p>
                 <h2 class="section-title">Contact Me</h2>
                 <p class="section-subtitle">Let's collaborate on the next project</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <div class="icon-email"></div>
-                        </div>
+                        <div class="contact-icon icon-email"></div>
                         <div class="contact-details">
                             <h3>Email</h3>
                             <p>jeremydjohar@gmail.com</p>
                         </div>
                     </div>
-                    <!-- <div class="contact-item">
-                        <div class="contact-icon">
-                            <div class="icon-phone"></div>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Phone</h3>
-                            <p>+62 8956 0505 3030</p>
-                        </div>
-                    </div> -->
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <div class="icon-location"></div>
-                        </div>
+                        <div class="contact-icon icon-location"></div>
                         <div class="contact-details">
                             <h3>Location</h3>
                             <p>Jakarta, Indonesia</p>
                         </div>
                     </div>
                 </div>
-                <form action="https://formspree.io/f/xjkoqdkg" method="POST"class="contact-form">
+                <form action="https://formspree.io/f/xjkoqdkg" method="POST" class="contact-form">
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Full Name" required>
                     </div>
@@ -415,10 +479,10 @@
                 <div class="footer-text">
                     <p>&copy; 2026 Jeremy Djohar Riyadi. All rights reserved</p>
                 </div>
-                <div class="social-link s">
-                    <a href="https://www.linkedin.com/in/jeremy-riyadi-1b7b32272/" class="social-link">LinkedIn</a>
-                    <a href="https://github.com/JeremyRiyadi" class="social-link">GitHub</a>
-                    <a href="https://www.instagram.com/jeremyd_riyadi" class="social-link">Instagram</a>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/jeremy-riyadi-1b7b32272/" class="social-link" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/JeremyRiyadi" class="social-link" target="_blank">GitHub</a>
+                    <a href="https://www.instagram.com/jeremyd_riyadi" class="social-link" target="_blank">Instagram</a>
                 </div>
             </div>
         </div>

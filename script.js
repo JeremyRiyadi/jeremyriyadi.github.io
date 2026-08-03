@@ -27,16 +27,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar background on scroll
+// Navbar background on scroll (toggles a class, actual styling lives in CSS)
+const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-    } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.boxShadow = 'none';
-    }
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
 });
 
 // Animate elements on scroll
@@ -50,7 +44,7 @@ const observer = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
             entry.target.style.transform = 'translateY(0)';
-            
+
             // Animate skill progress bars
             if (entry.target.classList.contains('skill-card')) {
                 const progressBar = entry.target.querySelector('.progress-bar');
@@ -59,7 +53,7 @@ const observer = new IntersectionObserver((entries) => {
                     progressBar.style.width = width + '%';
                 }, 200);
             }
-            
+
             // Animate stats counter
             if (entry.target.classList.contains('stat-item')) {
                 const statNumber = entry.target.querySelector('.stat-number');
@@ -71,7 +65,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe elements for animation
-document.querySelectorAll('.skill-card, .portfolio-item, .stat-item, .contact-item').forEach(el => {
+document.querySelectorAll('.skill-card, .portfolio-item, .stat-item, .contact-item, .education-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
     el.style.transition = 'all 0.6s ease';
@@ -92,42 +86,53 @@ function animateCounter(element, target) {
     }, 30);
 }
 
-// Form submission
+// Contact form submission (Formspree)
 const contactForm = document.querySelector('.contact-form');
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    
-    // Get form data
+
     const formData = new FormData(contactForm);
     const name = formData.get('name');
     const email = formData.get('email');
     const subject = formData.get('subject');
     const message = formData.get('message');
-    
-    // Simple validation
+
     if (!name || !email || !subject || !message) {
         alert('Mohon lengkapi semua field!');
         return;
     }
-    
-    // Simulate form submission
+
     const submitBtn = contactForm.querySelector('.btn-primary');
     const originalText = submitBtn.textContent;
     submitBtn.textContent = 'Mengirim...';
     submitBtn.disabled = true;
-    
-    setTimeout(() => {
-        contactForm.reset();
+
+    try {
+        const response = await fetch(contactForm.action, {
+            method: contactForm.method,
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+            alert('Message sent successfully!');
+            contactForm.reset();
+        } else {
+            alert('An error occurred, please try again');
+        }
+    } catch (err) {
+        alert('An error occurred, please try again');
+    } finally {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
-    }, 2000);
+    }
 });
 
-// Typing animation for hero text
+// Typing animation for hero name
 function typeWriter(element, text, speed = 100) {
     let i = 0;
     element.textContent = '';
-    
+
     function type() {
         if (i < text.length) {
             element.textContent += text.charAt(i);
@@ -143,29 +148,18 @@ window.addEventListener('load', () => {
     const nameElement = document.querySelector('.name');
     const originalText = nameElement.textContent;
     setTimeout(() => {
-        typeWriter(nameElement, originalText, 150);
-    }, 1000);
+        typeWriter(nameElement, originalText, 120);
+    }, 800);
 });
 
-// Parallax effect for hero section
+// Ambient parallax for the hero glow orbs
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
-    const parallaxElements = document.querySelectorAll('.floating-element');
-    
-    parallaxElements.forEach((element, index) => {
-        const speed = 0.5 + (index * 0.1);
-        element.style.transform = `translateY(${scrolled * speed}px)`;
-    });
-});
+    const orbs = document.querySelectorAll('.orb');
 
-// Add hover effect to portfolio items
-document.querySelectorAll('.portfolio-item').forEach(item => {
-    item.addEventListener('mouseenter', () => {
-        item.style.transform = 'translateY(-10px) scale(1.02)';
-    });
-    
-    item.addEventListener('mouseleave', () => {
-        item.style.transform = 'translateY(0) scale(1)';
+    orbs.forEach((orb, index) => {
+        const speed = 0.15 + (index * 0.08);
+        orb.style.transform = `translateY(${scrolled * speed}px)`;
     });
 });
 
@@ -181,44 +175,4 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealSections.forEach(section => {
     revealObserver.observe(section);
-});
-
-// Add CSS for reveal animation
-const style = document.createElement('style');
-style.textContent = `
-    section {
-        opacity: 0;
-        transform: translateY(50px);
-        transition: all 0.8s ease;
-    }
-    
-    section.revealed {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
-    .hero {
-        opacity: 1;
-        transform: none;
-    }
-`;
-document.head.appendChild(style);
-
-// Form using formspree
-const form = document.querySelector(".contact-form");
-
-form.addEventListener("submit", async function(e) {
-    e.preventDefault();
-    const data = new FormData(form);
-    const response = await fetch(form.action, {
-        method: form.method,
-        body: data,
-        headers: { 'Accept': 'application/json' }
-    });
-    if (response.ok) {
-        alert("Message sent successfully!");
-        form.reset();
-    } else {
-        alert("An error occurred, please try again");
-    }
 });
