@@ -1,493 +1,229 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Pribadi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=3">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Jeremy D. Riyadi | Portfolio</title>
+      <script>document.documentElement.classList.add('js')</script>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+      <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text"><span class="bracket">&lt;</span>Jeremy<span class="bracket">/&gt;</span></span>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#education" class="nav-link">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+          <a href="#home" class="logo">J<span>.</span>Riyadi</a>
+          <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#portfolio" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <button class="hamburger" aria-label="Menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
         </div>
-    </nav>
+      </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero grid-texture">
+      <section id="home" class="hero">
         <div class="hero-container">
-            <div class="hero-content">
-                <p class="eyebrow">// hello_world</p>
-                <h1 class="hero-title">
-                    <span class="greeting">Hi, I'm</span>
-                    <span class="name">Jeremy D. Riyadi</span>
-                </h1>
-                <span class="profession">Undergraduate Data Science Student at BINUS University</span>
-                <p class="hero-description">
-                    I'm currently a Data Science student with a strong interest in data analysis, and I have a high enthusiasm for learning and trying new things, especially in the fields of data technologies. I am also currently doing an internship at PT. KPSG as a Data Scientist, where I apply my knowledge to real-world projects and continue developing my skills.
-                </p>
-                <div class="hero-buttons">
-                    <a href="/image/Jeremy Djohar Riyadi CV.pdf" target="_blank" class="btn btn-primary">My CV</a>
-                    <a href="/achievements/achievements.html" class="btn btn-secondary">Certifications</a>
-                </div>
-                <p class="hero-meta"><span class="dot-live"></span> Based in Jakarta, Indonesia</p>
+          <div class="hero-content">
+            <p class="eyebrow">Portfolio &middot;</p>
+            <h1 class="hero-title"><span class="greeting">Hi, I'm</span><span class="name">Jeremy D. Riyadi</span></h1>
+            <span class="profession">Undergraduate Data Science Student at BINUS University</span>
+            <p class="hero-description">I'm a Data Science student with a strong interest in data analysis and a high enthusiasm for learning new things in data technologies. I'm currently interning at PT. KPSG as a Data Scientist, applying my knowledge to real-world projects.</p>
+            <div class="hero-buttons">
+              <a href="/image/Jeremy Djohar Riyadi CV.pdf" target="_blank" class="btn btn-primary">My CV</a>
+              <a href="/achievements/achievements.html" class="btn btn-secondary">Certifications</a>
             </div>
-            <div class="hero-visual">
-                <div class="orb orb-1"></div>
-                <div class="orb orb-2"></div>
-                <div class="terminal-card">
-                    <div class="terminal-header">
-                        <span class="dot dot-red"></span>
-                        <span class="dot dot-yellow"></span>
-                        <span class="dot dot-green"></span>
-                        <span class="terminal-title">status.sh</span>
-                    </div>
-                    <div class="terminal-body">
-                        <p class="terminal-line"><span class="prompt">$</span>whoami</p>
-                        <p class="terminal-line output">jeremy_djohar_riyadi</p>
-                        <p class="terminal-line"><span class="prompt">$</span>role --current</p>
-                        <p class="terminal-line output">Data Scientist Intern @ PT. KPSG</p>
-                        <p class="terminal-line"><span class="prompt">$</span>status</p>
-                        <p class="terminal-line output">Learning, building, shipping<span class="cursor">▍</span></p>
-                    </div>
-                </div>
+            <p class="hero-meta"><span class="dot-live"></span> Based in Jakarta, Indonesia</p>
+          </div>
+          <div class="hero-visual">
+            <div class="profile-card">
+              <div class="monogram">JR</div>
+              <h3>Jeremy Djohar Riyadi</h3>
+              <p class="card-sub">Data Science &middot; BINUS University</p>
+              <dl>
+                <div><dt>Current Role</dt><dd>Data Scientist Intern, PT. KPSG</dd></div>
+                <div><dt>Focus</dt><dd>Machine Learning &amp; Analytics</dd></div>
+                <div><dt>Status</dt><dd>Learning, building, shipping</dd></div>
+              </dl>
             </div>
+          </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
+        <div class="scroll-indicator"><div class="scroll-arrow"></div></div>
+      </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+      <section id="about" class="about light">
         <div class="container">
-            <div class="section-header">
-                <p class="eyebrow center">// about-me</p>
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Get to know more about my journey and passion</p>
+          <div class="section-header">
+            <p class="eyebrow center">About</p>
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">Get to know more about my journey and passion</p>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <p>I am an undergraduate Data Science student at BINUS University with a strong passion for data analysis and building impactful digital solutions. Alongside my studies, I am interning at PT. KPSG as a Data Scientist, gaining hands-on experience with real-world data.</p>
+              <p>I believe technology should provide meaningful value and solve real problems. By combining my background in data science with my interest in web development, I aim to build solutions that are not only functional but also intuitive for users.</p>
+              <div class="stats"><div class="stat-item"><span class="stat-number">40+</span><span class="stat-label">Projects Accomplished</span></div></div>
+              <div class="stats"><div class="stat-item"><span class="stat-number">1</span><span class="stat-label">Years of Experience</span></div></div>
             </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am an undergraduate Data Science student at BINUS University with a strong passion for data analysis and building impactful digital solutions. Alongside my studies, I am currently interning at PT. KPSG as a Data Scientist, where I gain hands-on experience working with real-world data and strengthening my analytical and problem-solving skills.
-                    </p>
-                    <p>
-                        I believe that technology should provide meaningful value and solve real-world problems. With a strong curiosity and eagerness to learn, I continuously explore new tools and technologies to improve both my technical and creative abilities. By combining my background in data science with my interest in web development, I aim to build solutions that are not only functional but also intuitive and impactful for users.
-                    </p>
-                    <div class="stats">
-                        <div class="stat-item">
-                            <span class="stat-number">20+</span>
-                            <span class="stat-label">Projects Accomplished</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-wrapper">
-                        <img src="./image/foto-diri.jpg" alt="Jeremy Djohar Riyadi">
-                    </div>
-                </div>
-            </div>
+            <div class="about-image"><div class="image-wrapper"><img src="./image/foto-diri.jpg" alt="Jeremy Djohar Riyadi"></div></div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
+      <section id="education" class="education">
         <div class="container">
-            <div class="section-header">
-                <p class="eyebrow center">// education</p>
-                <h2 class="section-title">Education</h2>
-                <p class="section-subtitle">The academic foundation behind the work</p>
+          <div class="section-header">
+            <p class="eyebrow center">Education</p>
+            <h2 class="section-title">Education</h2>
+            <p class="section-subtitle">The academic foundation behind the work</p>
+          </div>
+          <div class="card education-card">
+            <div class="logo-box"><img src="./image/work-experience/BINUS.png" alt="BINUS University Logo"></div>
+            <div class="card-body">
+              <div class="card-header"><h3>Bachelor of Computer Science — Data Science</h3><span class="date-pill">2022 - 2026 (Expected)</span></div>
+              <h4 class="org">BINUS University</h4>
+              <p>Focused on machine learning, statistical modeling, and data-driven problem solving, complemented by hands-on project work, teaching experience, and active involvement in campus initiatives.</p>
+              <div class="tags">
+                <span class="tag">Machine Learning</span><span class="tag">Statistical Modeling</span><span class="tag">Data Mining</span><span class="tag">Database Systems</span><span class="tag">Data Visualization</span>
+              </div>
             </div>
-            <!-- Sesuaikan rentang tahun & mata kuliah unggulan di bawah jika perlu -->
-            <div class="education-card">
-                <div class="education-logo">
-                    <img src="./image/work-experience/BINUS.png" alt="BINUS University Logo">
-                </div>
-                <div class="education-details">
-                    <div class="education-header">
-                        <h3>Bachelor of Computer Science — Data Science</h3>
-                        <span class="education-date">2022 - 2026 (Expected)</span>
-                    </div>
-                    <h4>BINUS University</h4>
-                    <p>
-                        Focused on machine learning, statistical modeling, and data-driven problem solving, complemented by hands-on project work, teaching experience, and active involvement in campus initiatives.
-                    </p>
-                    <div class="education-tags">
-                        <span class="tag">Machine Learning</span>
-                        <span class="tag">Statistical Modeling</span>
-                        <span class="tag">Data Mining</span>
-                        <span class="tag">Database Systems</span>
-                        <span class="tag">Data Visualization</span>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Work Experience Section -->
-    <section id="experience" class="experience">
+      <section id="experience" class="experience light">
         <div class="container">
-            <div class="section-header">
-                <p class="eyebrow center">// experience</p>
-                <h2 class="section-title">Work Experience</h2>
-                <p class="section-subtitle">My professional journey so far</p>
+          <div class="section-header">
+            <p class="eyebrow center">Experience</p>
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">My professional journey so far</p>
+          </div>
+          <div class="timeline">
+            <div class="card">
+              <div class="logo-box"><img src="./image/work-experience/KPSG.png" alt="KPSG"></div>
+              <div class="card-body">
+                <div class="card-header"><h3>Data Scientist Intern</h3><span class="date-pill">Feb 2026 - Present</span></div>
+                <h4 class="org">PT. KPSG (Member of Anabatic Group)</h4>
+                <p>Supported the development of AI-powered contact center solutions by testing chatbot and robocall workflows, preparing AI Scoring datasets, and creating technical documentation. Collaborated with cross-functional teams on client demos, feature validation, and business requirement documentation for the ARSI CXaaS platform.</p>
+              </div>
             </div>
-            <div class="experience-timeline">
-                <div class="experience-item">
-                    <div class="experience-logo">
-                        <img src="./image/work-experience/KPSG.png" alt="Company Logo">
-                    </div>
-                    <div class="experience-details">
-                        <div class="experience-header">
-                            <h3 class="experience-role">Data Scientist Intern</h3>
-                            <span class="experience-date">Feb 2026 - Present</span>
-                        </div>
-                        <h4 class="experience-company">PT. KPSG ( Member of Anabatic Group )</h4>
-                        <p class="experience-description">
-                            Supported the development and implementation of AI-powered contact center solutions by testing chatbot and robocall workflows, preparing AI Scoring datasets, and creating technical documentation. Collaborated with cross-functional teams to deliver client demos, feature validation, and business requirement documentation for the ARSI CXaaS platform.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-logo">
-                        <img src="./image/work-experience/SEC.png" alt="Company Logo">
-                    </div>
-                    <div class="experience-details">
-                        <div class="experience-header">
-                            <h3 class="experience-role">Coding Instructor</h3>
-                            <span class="experience-date">May 2025 - May 2026</span>
-                        </div>
-                        <h4 class="experience-company">Sunrise Enrichment Center</h4>
-                        <p class="experience-description">
-                            Responsible for teaching coding fundamentals to students, introducing basic programming concepts and problem-solving skills through interactive and practical learning activities. Prepare lesson materials, coding exercises, and simple projects to help students understand programming logic, guide students while they practice writing code, monitor their progress, and create a supportive and engaging learning environment that encourages curiosity, creativity, and confidence in technology.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-logo">
-                        <img src="./image/work-experience/SEC.png" alt="Company Logo">
-                    </div>
-                    <div class="experience-details">
-                        <div class="experience-header">
-                            <h3 class="experience-role">Math Instructor</h3>
-                            <span class="experience-date">May 2024 - May 2026</span>
-                        </div>
-                        <h4 class="experience-company">Sunrise Enrichment Center</h4>
-                        <p class="experience-description">
-                            Responsible for teaching mathematics to students by explaining concepts clearly and guiding them through problem solving and practice exercises. Prepare lesson materials, worksheets, and assessments to support student learning, monitor their progress and understanding, provide feedback to help improve their skills, and create a positive and engaging learning environment that encourages logical thinking, confidence, and active participation in learning mathematics.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-logo">
-                        <img src="./image/work-experience/SEC.png" alt="Company Logo">
-                    </div>
-                    <div class="experience-details">
-                        <div class="experience-header">
-                            <h3 class="experience-role">Science Instructor</h3>
-                            <span class="experience-date">May 2024 - Jan 2025</span>
-                        </div>
-                        <h4 class="experience-company">Sunrise Enrichment Center</h4>
-                        <p class="experience-description">
-                            Responsible for teaching science subjects to students in accordance with the curriculum, delivering concepts in an engaging and easy-to-understand way. Prepare learning materials, exercises, and assessments to support student understanding, guide students in exploring scientific concepts through problem solving and observation, monitor student progress, and create a positive and interactive learning environment that encourages curiosity and active participation.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <div class="experience-logo">
-                        <img src="./image/work-experience/BINUS.png" alt="Company Logo">
-                    </div>
-                    <div class="experience-details">
-                        <div class="experience-header">
-                            <h3 class="experience-role">Education Conseulor</h3>
-                            <span class="experience-date">Jun 2023 - May 2024</span>
-                        </div>
-                        <h4 class="experience-company">Binus University</h4>
-                        <p class="experience-description">
-                            Supported student recruitment initiatives by promoting BINUS University to prospective Grade 12 students and their parents through educational consultations, school presentations, and marketing activities. Represented the university at recruitment events, including BINUS Globalicious, providing guidance on academic programs, admissions, and scholarships while building strong relationships with schools to achieve enrollment targets.
-                        </p>
-                    </div>
-                </div>
+            <div class="card">
+              <div class="logo-box"><img src="./image/work-experience/SEC.png" alt="SEC"></div>
+              <div class="card-body">
+                <div class="card-header"><h3>Coding Instructor</h3><span class="date-pill">May 2025 - May 2026</span></div>
+                <h4 class="org">Sunrise Enrichment Center</h4>
+                <p>Taught coding fundamentals and problem-solving through interactive, practical activities. Prepared lesson materials and simple projects, guided students as they practiced, monitored their progress, and fostered curiosity, creativity, and confidence in technology.</p>
+              </div>
             </div>
+            <div class="card">
+              <div class="logo-box"><img src="./image/work-experience/SEC.png" alt="SEC"></div>
+              <div class="card-body">
+                <div class="card-header"><h3>Math Instructor</h3><span class="date-pill">May 2024 - May 2026</span></div>
+                <h4 class="org">Sunrise Enrichment Center</h4>
+                <p>Taught mathematics by explaining concepts clearly and guiding students through problem solving. Prepared worksheets and assessments, monitored understanding, and gave feedback that built logical thinking and confidence.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="logo-box"><img src="./image/work-experience/SEC.png" alt="SEC"></div>
+              <div class="card-body">
+                <div class="card-header"><h3>Science Instructor</h3><span class="date-pill">May 2024 - Jan 2025</span></div>
+                <h4 class="org">Sunrise Enrichment Center</h4>
+                <p>Taught science in line with the curriculum, delivering concepts in an engaging, easy-to-understand way. Guided students in exploring scientific ideas through problem solving and observation.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="logo-box"><img src="./image/work-experience/BINUS.png" alt="BINUS"></div>
+              <div class="card-body">
+                <div class="card-header"><h3>Education Counselor</h3><span class="date-pill">Jun 2023 - May 2024</span></div>
+                <h4 class="org">BINUS University</h4>
+                <p>Promoted BINUS University to prospective Grade 12 students and parents through consultations, school presentations, and marketing activities. Represented the university at events such as BINUS Globalicious, advising on programs, admissions, and scholarships.</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
+      <section id="skills" class="skills">
         <div class="container">
-            <div class="section-header">
-                <p class="eyebrow center">// skills</p>
-                <h2 class="section-title">Skills</h2>
-                <p class="section-subtitle">Technologies and Tools I Use</p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon icon-frontend"></div>
-                    <h3>Frontend Development</h3>
-                    <p>HTML5, CSS3, JavaScript</p>
-                    <div class="skill-progress">
-                        <div class="progress-bar" data-width="80"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon icon-datasci"></div>
-                    <h3>Data Science</h3>
-                    <p>Python, R</p>
-                    <div class="skill-progress">
-                        <div class="progress-bar" data-width="95"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon icon-design"></div>
-                    <h3>UI/UX Design</h3>
-                    <p>Figma</p>
-                    <div class="skill-progress">
-                        <div class="progress-bar" data-width="70"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon icon-qa"></div>
-                    <h3>Quality Assurance</h3>
-                    <p>Manual Testing</p>
-                    <div class="skill-progress">
-                        <div class="progress-bar" data-width="95"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon icon-ai"></div>
-                    <h3>Artificial Intelligence</h3>
-                    <p>Machine Learning, Deep Learning, Text Mining</p>
-                    <div class="skill-progress">
-                        <div class="progress-bar" data-width="95"></div>
-                    </div>
-                </div>
-            </div>
+          <div class="section-header">
+            <p class="eyebrow center">Skills</p>
+            <h2 class="section-title">Skills</h2>
+            <p class="section-subtitle">Technologies and tools I use</p>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card"><div class="skill-icon">&lt;/&gt;</div><h3>Frontend Development</h3><p>HTML5, CSS3, JavaScript</p><div class="skill-progress"><div class="progress-bar" data-width="80"></div></div></div>
+            <div class="skill-card"><div class="skill-icon">PY</div><h3>Data Science</h3><p>Python, R</p><div class="skill-progress"><div class="progress-bar" data-width="95"></div></div></div>
+            <div class="skill-card"><div class="skill-icon">UI</div><h3>UI/UX Design</h3><p>Figma</p><div class="skill-progress"><div class="progress-bar" data-width="70"></div></div></div>
+            <div class="skill-card"><div class="skill-icon">QA</div><h3>Quality Assurance</h3><p>Manual Testing</p><div class="skill-progress"><div class="progress-bar" data-width="95"></div></div></div>
+            <div class="skill-card"><div class="skill-icon">AI</div><h3>Artificial Intelligence</h3><p>Machine Learning, Deep Learning, Text Mining</p><div class="skill-progress"><div class="progress-bar" data-width="95"></div></div></div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Tech Stack Marquee -->
-    <section class="tech-stack">
+      <section class="tech-stack light">
+        <div class="container"><p class="eyebrow center">Tools of the trade</p></div>
+        <div class="marquee"><div class="marquee-track" id="track">
+          <span class="tech-pill">Python</span><span class="tech-pill">R</span><span class="tech-pill">SQL</span><span class="tech-pill">Pandas</span><span class="tech-pill">NumPy</span><span class="tech-pill">Scikit-learn</span><span class="tech-pill">TensorFlow</span><span class="tech-pill">Power BI</span><span class="tech-pill">Tableau</span><span class="tech-pill">Jupyter Notebook</span><span class="tech-pill">Git &amp; GitHub</span><span class="tech-pill">Excel</span>
+        </div></div>
+      </section>
+
+      <section id="portfolio" class="portfolio">
         <div class="container">
-            <p class="eyebrow center">// tools_of_the_trade</p>
+          <div class="section-header">
+            <p class="eyebrow center">Projects</p>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Several projects I have worked on</p>
+          </div>
+          <div class="portfolio-grid">
+            <div class="portfolio-item"><span class="num">01</span><h3>Recreate Amazon UI</h3><p>Using Vanilla HTML, CSS, and JS</p><a href="https://github.com/JeremyRiyadi/RecreateAmazonUI" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a></div>
+            <div class="portfolio-item"><span class="num">02</span><h3>Obesity Prediction App</h3><p>An application that predicts obesity levels based on user data</p><a href="https://github.com/JeremyRiyadi/ObesityPrediction" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a></div>
+            <div class="portfolio-item"><span class="num">03</span><h3>Air Quality Analysis</h3><p>Exploring atmospheric pollutants and weather factors</p><a href="https://github.com/JeremyRiyadi/AirQualityAnalysis" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a></div>
+            <div class="portfolio-item"><span class="num">04</span><h3>Image Classification</h3><p>Classifying images with the label Kirmizi using an autoencoder</p><a href="https://github.com/JeremyRiyadi/AutoEncoder-Image-Classification" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a></div>
+            <div class="portfolio-item"><span class="num">05</span><h3>KMeans Clustering</h3><p>Group data points into meaningful clusters</p><a href="https://github.com/JeremyRiyadi/K-Means-Clustering" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a></div>
+            <div class="portfolio-item"><span class="num">06</span><h3>Binus Network Topology</h3><p>Simulate a computer network for Binus University</p><a href="https://github.com/JeremyRiyadi/Binus-Network-Topology" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a></div>
+          </div>
+          <p class="github-portfolio">Want to see more? Visit my <a href="https://github.com/JeremyRiyadi" target="_blank" rel="noopener">GitHub</a></p>
         </div>
-        <div class="marquee">
-            <div class="marquee-track">
-                <span class="tech-pill">Python</span>
-                <span class="tech-pill">R</span>
-                <span class="tech-pill">SQL</span>
-                <span class="tech-pill">Pandas</span>
-                <span class="tech-pill">NumPy</span>
-                <span class="tech-pill">Scikit-learn</span>
-                <span class="tech-pill">TensorFlow</span>
-                <span class="tech-pill">Power BI</span>
-                <span class="tech-pill">Tableau</span>
-                <span class="tech-pill">Jupyter Notebook</span>
-                <span class="tech-pill">Git & GitHub</span>
-                <span class="tech-pill">Excel</span>
-                <span class="tech-pill" aria-hidden="true">Python</span>
-                <span class="tech-pill" aria-hidden="true">R</span>
-                <span class="tech-pill" aria-hidden="true">SQL</span>
-                <span class="tech-pill" aria-hidden="true">Pandas</span>
-                <span class="tech-pill" aria-hidden="true">NumPy</span>
-                <span class="tech-pill" aria-hidden="true">Scikit-learn</span>
-                <span class="tech-pill" aria-hidden="true">TensorFlow</span>
-                <span class="tech-pill" aria-hidden="true">Power BI</span>
-                <span class="tech-pill" aria-hidden="true">Tableau</span>
-                <span class="tech-pill" aria-hidden="true">Jupyter Notebook</span>
-                <span class="tech-pill" aria-hidden="true">Git & GitHub</span>
-                <span class="tech-pill" aria-hidden="true">Excel</span>
-            </div>
-        </div>
-    </section>
+      </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
+      <section id="contact" class="contact light">
         <div class="container">
-            <div class="section-header">
-                <p class="eyebrow center">// projects</p>
-                <h2 class="section-title">Projects</h2>
-                <p class="section-subtitle">Several projects I have worked on</p>
+          <div class="section-header">
+            <p class="eyebrow center">Contact</p>
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">Let's collaborate on the next project</p>
+          </div>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item"><div class="contact-icon">@</div><div><h3>Email</h3><p>jeremydjohar@gmail.com</p></div></div>
+              <div class="contact-item"><div class="contact-icon">&#9906;</div><div><h3>Location</h3><p>Jakarta, Indonesia</p></div></div>
             </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <h3>Recreate Amazon UI</h3>
-                                <p>Using Vanilla HTML, CSS, and JS</p>
-                                <div class="project-links">
-                                    <a href="https://github.com/JeremyRiyadi/RecreateAmazonUI" target="_blank" class="project-link">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <h3>Obesity Prediction App</h3>
-                                <p>An application that predicts obesity levels based on user data</p>
-                                <div class="project-links">
-                                    <a href="https://github.com/JeremyRiyadi/ObesityPrediction" target="_blank" class="project-link">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <h3>Air Quality Analysis</h3>
-                                <p>Exploring Atmospheric Pollutants and Weather Factors</p>
-                                <div class="project-links">
-                                    <a href="https://github.com/JeremyRiyadi/AirQualityAnalysis" class="project-link">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <h3>Image Classification</h3>
-                                <p>Classifying images containing the label *Kirmizi* using autoencoder</p>
-                                <div class="project-links">
-                                    <a href="https://github.com/JeremyRiyadi/AutoEncoder-Image-Classification" class="project-link" target="_blank">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <h3>KMeans Clustering</h3>
-                                <p>Group data points into meaningful clusters</p>
-                                <div class="project-links">
-                                    <a href="https://github.com/JeremyRiyadi/K-Means-Clustering" class="project-link" target="_blank">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <div class="project-overlay">
-                            <div class="project-info">
-                                <h3>Binus Network Topology</h3>
-                                <p>Simulate a computer network for Binus University</p>
-                                <div class="project-links">
-                                    <a href="https://github.com/JeremyRiyadi/Binus-Network-Topology" class="project-link" target="_blank">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="github-portfolio">If you'd like to see more of my projects, feel free to check out my <a href="https://github.com/JeremyRiyadi" target="_blank">Github</a></div>
+            <form action="https://formspree.io/f/xjkoqdkg" method="POST" class="contact-form">
+              <div class="form-group"><input type="text" name="name" placeholder="Full Name" required></div>
+              <div class="form-group"><input type="email" name="email" placeholder="Email" required></div>
+              <div class="form-group"><input type="text" name="subject" placeholder="Subject" required></div>
+              <div class="form-group"><textarea name="message" placeholder="Your Message" rows="5" required></textarea></div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <p class="eyebrow center">// contact</p>
-                <h2 class="section-title">Contact Me</h2>
-                <p class="section-subtitle">Let's collaborate on the next project</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon icon-email"></div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <p>jeremydjohar@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon icon-location"></div>
-                        <div class="contact-details">
-                            <h3>Location</h3>
-                            <p>Jakarta, Indonesia</p>
-                        </div>
-                    </div>
-                </div>
-                <form action="https://formspree.io/f/xjkoqdkg" method="POST" class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Full Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
+      <footer class="footer">
+        <div class="container footer-content">
+          <p>&copy; 2026 Jeremy Djohar Riyadi. All rights reserved</p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/jeremy-riyadi-1b7b32272/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/JeremyRiyadi" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.instagram.com/jeremyd_riyadi" target="_blank" rel="noopener">Instagram</a>
+          </div>
         </div>
-    </section>
+      </footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2026 Jeremy Djohar Riyadi. All rights reserved</p>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/jeremy-riyadi-1b7b32272/" class="social-link" target="_blank">LinkedIn</a>
-                    <a href="https://github.com/JeremyRiyadi" class="social-link" target="_blank">GitHub</a>
-                    <a href="https://www.instagram.com/jeremyd_riyadi" class="social-link" target="_blank">Instagram</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+      <script src="script.js"></script>
+    </body>
 </html>
